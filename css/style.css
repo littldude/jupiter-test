@@ -627,6 +627,8 @@ h1, h2, h3, h4, h5 {
   transition: 0.2s linear;
 }
 .footer__build--img {
+  display: flex;
+  flex: 0 0 auto;
   width: 443px;
   height: 432px;
 }
@@ -961,14 +963,8 @@ h1, h2, h3, h4, h5 {
     width: auto;
   }
   .footer__build--img {
-    width: 400px;
-    min-height: 100%;
+    width: auto;
     height: auto;
-  }
-}
-@media (max-width: 474px) {
-  .footer__build--img {
-    width: 273px;
   }
 }
 
