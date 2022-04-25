@@ -72,7 +72,6 @@ h1,h2,h3,h4,h5 {
     }
 }
 .button {
-    // display: inline;
     border-radius: 6px;
     border: 1px rgba(255,255,255,.29) solid;
     text-align: center;
@@ -117,12 +116,22 @@ h1,h2,h3,h4,h5 {
             font-size: 16px;
             line-height: 32px;
             font-weight: 400;
+            &:hover {
+                color: $purple;
+                transition: .2s linear;
+            }
         }
         &--mob {
             display: none;
         }
     }
     &__button {
+        &:hover {
+            background-color: $purple;
+            border: 1px $purple solid;
+            color: $white;
+            transition: .2s linear;
+        }
         &--menu {
             display: none;
         }
@@ -331,7 +340,7 @@ h1,h2,h3,h4,h5 {
 .swiper-review {
     margin-top: 66px;
     width: 100%;
-    height: 530px;
+    height: fit-content;
 }
 .swiper-pagination-bullet {
     width: 12px !important;
@@ -381,19 +390,37 @@ h1,h2,h3,h4,h5 {
     width: 770px !important;
     margin-left: -55px;
 }
-
 .review {
     padding: 58px 0 74px 0;
     background-color: $dark;
+    position: relative;
     &__inner {
         h5 {
             text-align: center;
         }
         &--item {
-            // max-width: 770px;
             background-color: $white;
             padding: 48px;
             border-radius: 6px;
+            &__rating {
+                display: flex;
+                align-items: center;
+                margin-bottom: 47px;
+                svg {
+                    display: block;
+                    width: 23px;
+                    height: 22px;
+                    margin-right: 9px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &__person {
+                margin-top: 28px;
+                display: flex;
+                align-items: center;
+            }
         }
     }
     &__title {
@@ -402,6 +429,13 @@ h1,h2,h3,h4,h5 {
         width: 432px;
         margin: 15px auto 0 auto;    
         text-align: center;    
+    }
+    &__text {
+        color: $brown;
+    }
+    &__name {
+        color: $brown;
+        margin-left: 24px;
     }
 }
 .hidden {
@@ -507,6 +541,10 @@ h1,h2,h3,h4,h5 {
     }
     &__link {
         color: $brown;
+        &:hover {
+            color: $red;
+            transition: .2s linear;
+        }
         &--social {
             display: flex;
             align-items: center;
@@ -516,6 +554,10 @@ h1,h2,h3,h4,h5 {
             border-radius: 100%;
             background-color: $red;
             margin-right: 8px;
+            &:hover {
+                background-color: $purple;
+                transition: .2s linear;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -579,6 +621,12 @@ h1,h2,h3,h4,h5 {
             padding: 15px 28px;
             background-color: $white;
             color: $brown;
+            &:hover {
+                background-color: $purple;
+                color: $white;
+                border: 1px $purple solid;
+                transition: .2s linear;
+            }
         }
         &--img {
             width: 443px;
@@ -728,7 +776,7 @@ h1,h2,h3,h4,h5 {
         }
     }
     .faq {
-        padding: 84px 0 770px 0;
+        padding: 100px 0 770px 0;
         &__inner {
             width: 100%;
             h5 {
@@ -744,6 +792,10 @@ h1,h2,h3,h4,h5 {
     }
     .swiper-button-next, .swiper-button-prev {
         display: none !important;
+    }
+    .swiper-slide-review.swiper-slide-active {
+        width: 100% !important;
+        margin-left: 0;
     }
     .footer {
         padding: 198px 0 60px 0;
@@ -876,6 +928,12 @@ h1,h2,h3,h4,h5 {
         }
         &__title {
             text-align: left;
+        }
+    }
+    .review {
+        padding: 160px 0 74px 0;
+        &__title {
+            width: 300px;
         }
     }
     .faq {

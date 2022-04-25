@@ -34,7 +34,7 @@
                     <a href="#" class="header__menu--item">Blog</a>
                     <a href="#" class="button button--header">Contact</a>
                 </div>
-                <a href="#" class="header__button button button--header">Contact</a>
+                <a href="#" class="header__button button">Contact</a>
                 <a href="#" class="header__button--menu">
                     <span>
                     </span>
@@ -174,12 +174,18 @@
             <div class="swiper-wrapper swiper-wrapper-review">
                 <div class="swiper-slide swiper-slide-review">
                     <div class="review__inner--item">
-                        <div class="review__inner--item__rating"></div>
-                        <p class="text">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you. A digital agency is a business you hire to outsource your digital marketing efforts, </p>
+                        <div class="review__inner--item__rating">
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                        </div>
+                        <p class="review__text text">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you. A digital agency is a business you hire to outsource your digital marketing efforts, </p>
                         <div class="review__inner--item__person">
-                            <img src="img/Oval.png" alt="">
+                            <img src="img/review-img-1.png" alt="">
                             <div class="review__name">
-                                <p class="text">Alan Martí</p>
+                                <p class="h--4">Alan Martí</p>
                                 <p class="text">Meta Inc.</p>
                             </div>
                         </div>
@@ -187,34 +193,45 @@
                 </div>
                 <div class="swiper-slide swiper-slide-review">
                     <div class="review__inner--item">
-                        <div class="review__inner--item__rating"></div>
-                        <p class="text">Provide your business with a variety of digital solutions to promote your product or service online.</p>
+                        <div class="review__inner--item__rating">
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                        </div>
+                        <p class="review__text text">Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.</p>
                         <div class="review__inner--item__person">
-                            <img src="img/Oval.png" alt="">
+                            <img src="img/review-img-3.png" alt="">
                             <div class="review__name">
-                                <p class="text">Richardo Kann</p>
-                                <p class="text">Meta Inc.</p>
+                                <p class="h--4">Richardo Kann</p>
+                                <p class="text">Photogram</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-review">
                     <div class="review__inner--item">
-                        <div class="review__inner--item__rating"></div>
-                        <p class="text">Provide your business with a variety of digital solutions to promote your product or service online.</p>
+                        <div class="review__inner--item__rating">
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                            <svg><use href="sprite.svg#star"></use></svg>
+                        </div>
+                        <p class="review__text text">Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.</p>
                         <div class="review__inner--item__person">
-                            <img src="img/Oval.png" alt="">
+                            <img src="img/review-img-2.png" alt="">
                             <div class="review__name">
-                                <p class="text">Richardo Kann</p>
-                                <p class="text">Meta Inc.</p>
+                                <p class="h--4">Graham Griffiths</p>
+                                <p class="text">Twitor</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="swiper-pagination swiper-pagination1"></div>                    
         </div>
+        <div class="swiper-pagination swiper-pagination1"><div> 
     </section>
     <section class="faq">
         <div class="container">
@@ -330,6 +347,7 @@
         </div>
     </footer>
 
+    <!-- Show/hide text in FAQ block -->
     <script>
        let buttons = document.getElementsByClassName('faq__button');
         
@@ -348,7 +366,7 @@
         }
        }
     </script>
-
+    <!-- Header menu -->
     <script>
         let headerButton= document.getElementsByClassName('header__button--menu');
         
@@ -361,7 +379,7 @@
         }
         }
     </script>
-
+    <!-- Sliders -->
     <script>
         let swiperTeam = new Swiper('.swiper-team', {
             direction: 'horizontal',
@@ -397,7 +415,6 @@
         loop: true,
         centeredSlides: true,
         spaceBetween: 0,
-        
         preventClicks: true,
         slideToClickedSlide: true,
         coverflow: {
@@ -409,9 +426,10 @@
         },
         breakpoints: {
             320: {
-            slidesPerView: 'auto',
+            slidesPerView: 1,
+            centeredSlides: true,
             },
-            768: {
+            1220: {
             slidesPerView: 3,
             centeredSlides: true,
             },
