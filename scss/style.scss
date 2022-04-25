@@ -630,13 +630,15 @@ h1,h2,h3,h4,h5 {
         }
         &--img {
             display: flex;
-            flex: 0 0 auto;
-            width: 443px;
-            height: 432px;
+            // width: 443px;
+            // height: 432px;
+            max-width: 100%;
+            height: auto;
             img {
-                display: block;
+                
+                flex: 0 0 auto;
                 width: 100%;
-                height: fit-content;
+                height: 100%;
             }
         }
     }
@@ -987,10 +989,10 @@ h1,h2,h3,h4,h5 {
             &--text {
                 width: auto;
             }
-            &--img {
-                width: auto;
-                height: auto;
-            }
+            // &--img {
+            //     width: auto;
+            //     height: auto;
+            // }
         }
     }
 }

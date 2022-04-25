@@ -628,14 +628,13 @@ h1, h2, h3, h4, h5 {
 }
 .footer__build--img {
   display: flex;
-  flex: 0 0 auto;
-  width: 443px;
-  height: 432px;
+  max-width: 100%;
+  height: auto;
 }
 .footer__build--img img {
-  display: block;
+  flex: 0 0 auto;
   width: 100%;
-  height: fit-content;
+  height: 100%;
 }
 
 @media (max-width: 1220px) {
@@ -961,10 +960,6 @@ h1, h2, h3, h4, h5 {
   }
   .footer__build--text {
     width: auto;
-  }
-  .footer__build--img {
-    width: auto;
-    height: auto;
   }
 }
 
