@@ -806,6 +806,7 @@ h1, h2, h3, h4, h5 {
   .footer__build--img {
     order: 1;
     margin-bottom: 40px;
+    max-width: 380px;
   }
   .footer__inner {
     flex-direction: column;
@@ -960,6 +961,9 @@ h1, h2, h3, h4, h5 {
   }
   .footer__build--text {
     width: auto;
+  }
+  .footer__build--img {
+    max-width: 460px;
   }
 }
 
