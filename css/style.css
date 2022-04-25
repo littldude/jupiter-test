@@ -871,9 +871,15 @@ h1, h2, h3, h4, h5 {
   }
   .about__gallery {
     margin-top: 72px;
+    grid-column-gap: 17px;
+    grid-row-gap: 17px;
   }
   .about__gallery--col {
     width: 100%;
+  }
+  .about__gallery--col:last-child {
+    grid-column-gap: 17px;
+    grid-row-gap: 17px;
   }
 
   .feature {
@@ -956,7 +962,7 @@ h1, h2, h3, h4, h5 {
   }
   .footer__build--img {
     width: 400px;
-    height: auto;
+    height: 100%;
   }
 }
 @media (max-width: 474px) {
