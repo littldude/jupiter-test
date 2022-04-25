@@ -630,8 +630,6 @@ h1,h2,h3,h4,h5 {
         }
         &--img {
             display: flex;
-            // width: 443px;
-            // height: 432px;
             max-width: 100%;
             height: auto;
             img {
@@ -989,19 +987,6 @@ h1,h2,h3,h4,h5 {
             &--text {
                 width: auto;
             }
-            // &--img {
-            //     width: auto;
-            //     height: auto;
-            // }
         }
     }
 }
-// @media (max-width: 474px) {
-//     .footer {
-//         &__build {
-//             &--img {
-//                 width: auto;
-//             }
-//         }
-//     }
-// }

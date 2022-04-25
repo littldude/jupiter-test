@@ -404,44 +404,42 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },           
+            },
             });
 
     </script>
-
-<script>
-    let swiperReview = new Swiper('.swiper-review', {
-        direction: 'horizontal',
-        loop: true,
-        centeredSlides: true,
-        spaceBetween: 0,
-        preventClicks: true,
-        slideToClickedSlide: true,
-        coverflow: {
-            rotate: 0,
-            stretch: 0,
-            depth: 300,
-            modifier: 0,
-            slideShadows : false,
-        },
-        breakpoints: {
-            320: {
-            slidesPerView: 1,
+    <script>
+        let swiperReview = new Swiper('.swiper-review', {
+            direction: 'horizontal',
+            loop: true,
             centeredSlides: true,
+            spaceBetween: 0,
+            preventClicks: true,
+            slideToClickedSlide: true,
+            coverflow: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 0,
+                slideShadows : false,
             },
-            1220: {
-            slidesPerView: 3,
-            centeredSlides: true,
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                centeredSlides: true,
+                },
+                1220: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                },
             },
-        },
-        pagination: {
-            el: '.swiper-pagination1',
-            clickable: true,
-        },
-    });
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true,
+            },
+        });
 
-</script>
-
+    </script>
 </body>
 </html>
 
