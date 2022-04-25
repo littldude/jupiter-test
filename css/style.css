@@ -962,7 +962,7 @@ h1, h2, h3, h4, h5 {
   }
   .footer__build--img {
     width: 400px;
-    height: 100%;
+    min-height: 100%;
   }
 }
 @media (max-width: 474px) {
